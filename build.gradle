@@ -18,7 +18,7 @@ plugins {
 
 apply plugin: 'net.minecraftforge.gradle.forge'
 
-def build_number = 'CUSTOM'
+def build_number = '42'
 
 if (System.getenv('BUILD_NUMBER') != null)
     build_number = System.getenv('BUILD_NUMBER')
