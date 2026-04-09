@@ -61,7 +61,7 @@ public class ProxyCommon implements IProxy {
         Waila.LOGGER.info("Registering plugin at {}", PluginCore.class.getCanonicalName());
         // Register the rest
         List<Map.Entry<Class<?>, IWailaPlugin>> sortedPlugins = Lists.newArrayList(plugins.entrySet());
-                sortedPlugins.sort((o1, o2) -> {
+        sortedPlugins.sort((o1, o2) -> {
             if (o1.getKey().getCanonicalName().startsWith("mcp.mobius.waila") && !o2.getKey().getCanonicalName().startsWith("mcp.mobius.waila")) {
                 return -1;
             } else if (!o1.getKey().getCanonicalName().startsWith("mcp.mobius.waila") && o2.getKey().getCanonicalName().startsWith("mcp.mobius.waila")) {
